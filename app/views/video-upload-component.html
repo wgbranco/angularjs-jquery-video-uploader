@@ -1,0 +1,23 @@
+<div class="main_container vertical_box">
+
+  <!-- File selection form -->
+  <form id="fileupload">
+    <video-input-component
+      pending="$ctrl.uploading"
+      file-selected="$ctrl.onVideoSelected(file)">
+    </video-input-component>
+  </form>
+
+  <!-- Upload progress bar -->
+  <md-progress-linear
+    md-mode="determinate"
+    ng-if="$ctrl.uploading"
+    value="{{$ctrl.uploadPercentage}}">
+  </md-progress-linear>
+
+  <!-- List of uploaded files -->
+  <upload-list-component
+    uploads="$ctrl.uploads">
+  </upload-list-component>
+
+</div>

@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+}
+
+.horizontal_box {
+  display: flex;
+  width: 100%;
+}
+
+.align_start_box {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.vertical_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.no-padding-no-margin {
+  padding: 0;
+  margin: 0;
+}
+
+.file-name-container {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.file-name-container > input {
+  padding-left: 12px !important;
+  width: 100%;
+}
+
+.main_container {
+    display:flex;
+    width: 100%;
+    max-width: 500px;
+    margin: 30px;
+}
+
+video-input-component {
+    width: 100%;
+}
+
+upload-item-component {
+  margin-top: 30px;
+  padding-left: 15px;
+  border-left: 4px solid gainsboro;
+}
+
+.upload_item {
+  width: 100%;
+  height: auto;
+}
+
+.upload_item .video-title {
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.upload_item md-icon {
+  padding: 0;
+  margin: 0;
+  margin-right: 12px;
+}
+
+.upload_item span {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: gray;
+}

@@ -1,0 +1,14 @@
+<div id="container" class="horizontal_box">
+  <md-button
+    id="file_select"
+    title="Choose a video file to upload"
+	  class="md-fab md-raised md-mini no-padding-no-margin"
+    ng-disabled="$ctrl.pending">
+    <md-icon class="material-icons">cloud_upload</md-icon>
+  </md-button>
+
+  <md-input-container
+		class="file-name-container no-padding-no-margin">
+		<input type="text" aria-label="File name" value="{{$ctrl.fileName}}" readonly>
+	</md-input-container>
+</div>

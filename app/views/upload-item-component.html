@@ -1,0 +1,28 @@
+<div class="vertical_box">
+
+  <!-- <img src="{{$ctrl.thumbnailUrl}}"> -->
+
+  <!-- Header with icon and title -->
+  <div class="horizontal_box video-title">
+    <md-icon class="material-icons">videocam</md-icon>
+    <span>{{$ctrl.videoName}}</span>
+  </div>
+
+  <!-- Wistia player container -->
+  <div
+    ng-show="$ctrl.videoId"
+    class="wistia_responsive_padding"
+    style="padding:56.25% 0 0 0;position:relative;">
+
+    <div class="wistia_responsive_wrapper"
+      style="height:100%;left:0;position:absolute;top:0;width:100%;">
+      <div
+        class="wistia_embed videoFoam=true"
+        ng-class="$ctrl.videoIdClass"
+        style="height:100%;width:100%">
+        &nbsp;
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,11 @@
+<md-list>
+  <md-list-item
+    class="md-2-line no-padding-no-margin"
+    ng-repeat="upload in $ctrl.uploads track by $index">
+
+    <upload-item-component
+        item="upload"
+        class="upload_item">
+    </upload-item-component>
+  </md-list-item>
+</md-list>

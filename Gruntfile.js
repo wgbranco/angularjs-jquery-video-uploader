@@ -433,7 +433,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:<wgbranco>/<angularjs-jquery-video-uploader>.git',
+          remote: 'git@github.com:wgbranco/angularjs-jquery-video-uploader.git',
           branch: 'gh-pages'
         }
       },

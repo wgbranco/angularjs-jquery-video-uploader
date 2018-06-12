@@ -485,11 +485,11 @@ module.exports = function (grunt) {
     'ngtemplates',
     'concat',
     'ngAnnotate',
-    'copy:dist'
+    'copy:dist',
     // 'cdnify',
     // 'cssmin',
     // 'uglify',
-    // 'filerev',
+    'filerev',
     // 'usemin',
     // 'htmlmin'
   ]);

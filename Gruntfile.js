@@ -486,12 +486,12 @@ module.exports = function (grunt) {
     'concat',
     'ngAnnotate',
     'copy:dist',
-    // 'cdnify',
-    // 'cssmin',
-    // 'uglify',
+    'cdnify',
+    'cssmin',
+    'uglify',
     'filerev',
-    // 'usemin',
-    // 'htmlmin'
+    'usemin',
+    'htmlmin'
   ]);
 
   grunt.registerTask('default', [

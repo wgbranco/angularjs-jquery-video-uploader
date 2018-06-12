@@ -4,6 +4,7 @@
   "dependencies": {
     "jquery": "^3.3.1",
     "jquery-ui": "^1.12.1",
+    "jquery.iframe-transport": "^1.0.1",
     "blueimp-file-upload": "^9.21.0",
     "angular": "^1.4.0",
     "angular-animate": "^1.4.0",

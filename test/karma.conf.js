@@ -22,6 +22,7 @@ module.exports = function(config) {
       // bower:js
       'bower_components/jquery/dist/jquery.js',
       'bower_components/jquery-ui/jquery-ui.js',
+      'bower_components/jquery.iframe-transport/jquery.iframe-transport.js',
       'bower_components/blueimp-file-upload/js/jquery.fileupload.js',
       'bower_components/angular/angular.js',
       'bower_components/angular-animate/angular-animate.js',

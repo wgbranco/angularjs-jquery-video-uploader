@@ -43,31 +43,31 @@ angular.module('myApp')
     }
 
     function onUploadStart(err, data) {
-      for (var callback of uploadStartCallbacks) {
+      uploadStartCallbacks.forEach(function(callback) {
         // Call function and trigger change detection
         $rootScope.$apply(callback(err, data));
-      }
+      });
     }
 
     function onUploadProgress(err, data) {
-      for (var callback of uploadProgressCallbacks) {
+      uploadProgressCallbacks.forEach(function(callback) {
         // Call function and trigger change detection
         $rootScope.$apply(callback(err, data));
-      }
+      });
     }
 
     function onUploadDone(err, data) {
-      for (var callback of uploadDoneCallbacks) {
+      uploadDoneCallbacks.forEach(function(callback) {
         // Call function and trigger change detection
         $rootScope.$apply(callback(err, data));
-      }
+      });
     }
 
     function onUploadFail(err, data) {
-      for (var callback of uploadFailCallbacks) {
+      uploadFailCallbacks.forEach(function(callback) {
         // Call function and trigger change detection
         $rootScope.$apply(callback(err, data));
-      }
+      });
     }
 
     function sendVideo(file) {
@@ -92,7 +92,7 @@ angular.module('myApp')
 
     return {
       setCallbacks: setCallbacks,
-      sendVideo: sendVideo,
+      sendVideo: sendVideo
     };
   })
 ;

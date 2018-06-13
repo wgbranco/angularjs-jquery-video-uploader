@@ -5,10 +5,6 @@ angular.module('myApp')
     templateUrl: 'views/upload-list-component.html',
     bindings: {
       uploads: '<'
-    },
-    controller: function()
-    {
-      var ctrl = this;
     }
   })
 ;

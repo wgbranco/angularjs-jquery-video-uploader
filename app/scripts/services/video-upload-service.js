@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('myApp')
-  .factory('videoUploadService', function($rootScope) {
+  .factory('videoUploadService', ["$rootScope", function($rootScope) {
 
     var WISTIA_SERVER_URL = "https://upload.wistia.com";
     var WISTIA_API_KEY = "8d090944caf0a683d4e2daa0b0e555f0faa528d3373410e44972ad4fba71b7ed";
@@ -94,5 +94,5 @@ angular.module('myApp')
       setCallbacks: setCallbacks,
       sendVideo: sendVideo
     };
-  })
-;
+  }]
+);

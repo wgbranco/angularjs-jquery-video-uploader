@@ -394,8 +394,8 @@ module.exports = function (grunt) {
           expand: true,
           dot: true,
           cwd: 'bower_components/google-material-icons',
-          src: ['styles/fonts/*.*'],
-          dest: '<%= yeoman.dist %>',
+          src: ['fonts/*.*'],
+          dest: '<%= yeoman.dist %>/styles',
         }]
       },
       styles: {
